@@ -65,8 +65,8 @@ const createCustomIcon = (type) => {
 };
 
 const MapView = ({
-  center = [12.9716, 77.5946],
-  zoom = 13,
+  center = [22.5726, 88.3639],
+  zoom = 12,
   items = [],
   selectedCoords = null,
   onSelectItem,

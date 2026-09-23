@@ -57,9 +57,9 @@ const DonationTrackingPage = () => {
     updateDonationStatus(donation.id, nextIndex);
   };
 
-  // Route map coordinates
-  const pickupCoords = donation.coords || [12.9716, 77.5946];
-  const dropCoords = [12.9654, 77.5921];
+  // Route map coordinates (Kolkata)
+  const pickupCoords = donation.coords || [22.5448, 88.3986];
+  const dropCoords = [22.5489, 88.3567];
 
   const mapItems = [
     {
@@ -76,10 +76,10 @@ const DonationTrackingPage = () => {
     {
       id: `${donation.id}-dest`,
       markerType: 'ngo',
-      title: `Destination: ${donation.destinationNgo || 'Helping Hands NGO'}`,
+      title: `Destination: ${donation.destinationNgo || 'Calcutta Rescue Outreach'}`,
       subtitle: 'Drop-off Shelter',
       coords: dropCoords,
-      location: '45 Sunshine Colony, Central District'
+      location: '45 Park Street, Central Kolkata'
     }
   ];
 
@@ -262,10 +262,10 @@ const DonationTrackingPage = () => {
               <div className="flex-1 min-w-0">
                 <p className="text-[11px] font-bold text-stone-400 uppercase">Destination</p>
                 <p className="text-sm font-bold text-surface-dark truncate">
-                  {donation.destinationNgo || 'Helping Hands NGO'}
+                  {donation.destinationNgo || 'Calcutta Rescue Outreach'}
                 </p>
-                <p className="text-xs text-stone-500">45 Sunshine Colony, Central District</p>
-                <p className="text-xs text-stone-400 mt-0.5">David Miller (+1 555-4321)</p>
+                <p className="text-xs text-stone-500">45 Park Street, Central Kolkata</p>
+                <p className="text-xs text-stone-400 mt-0.5">Dr. Ananya Roy (+91 98300 12345)</p>
               </div>
             </div>
 

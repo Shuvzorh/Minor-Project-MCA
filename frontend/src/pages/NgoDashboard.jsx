@@ -38,7 +38,7 @@ const NgoDashboard = () => {
 
   return (
     <DashboardLayout
-      title={`Welcome, ${currentUser.organizationName || 'Helping Hands NGO'} 👋`}
+      title={`Welcome, ${currentUser.organizationName || 'Calcutta Rescue'} 👋`}
       subtitle="Here's your impact."
       action={
         <div className="flex items-center gap-3">

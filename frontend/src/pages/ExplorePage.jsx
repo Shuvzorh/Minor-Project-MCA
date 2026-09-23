@@ -106,9 +106,9 @@ const ExplorePage = () => {
     setUserLocationSimulated(true);
     setSelectedItem({
       id: 'my-loc',
-      title: 'Current Location',
-      coords: [12.9716, 77.5946],
-      subtitle: 'Central Metro Hub (Radius 5 km)'
+      title: 'Current Location (Kolkata)',
+      coords: [22.5726, 88.3639],
+      subtitle: 'Esplanade / Central Hub (Radius 5 km)'
     });
   };
 
@@ -264,7 +264,7 @@ const ExplorePage = () => {
           <div className="lg:col-span-7 h-[620px] rounded-3xl overflow-hidden shadow-soft border border-stone-200 relative bg-stone-100">
             <MapView
               items={filteredItems}
-              center={[12.9716, 77.5946]}
+              center={[22.5726, 88.3639]}
               selectedCoords={selectedItem?.coords}
               onSelectItem={(item) => setSelectedItem(item)}
               className="h-full w-full"
